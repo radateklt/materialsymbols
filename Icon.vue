@@ -1,0 +1,42 @@
+<script>
+import { h } from "vue"
+import './iconfont.woff2'
+
+export default {
+  props: ["value" ],
+  setup (props, ctx) {
+    return () => h("i", { class: "icon" }, props.value || ctx.slots)
+  },
+  install (app) {
+    app.component("Icon", this)
+  }
+}
+</script>
+
+<style>
+@font-face {
+  font-family: "Material Symbols";
+  font-style: normal;
+  font-weight: 400;
+  src: url(iconfont.woff2) format("woff2");
+}
+.icon {
+  font-family: "Material Symbols";
+  font-weight: normal;
+  font-style: normal;
+  max-width: 2rem;
+  width: 1.25rem;
+  text-align: center;
+  overflow: hidden;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  line-height: 1;
+  font-feature-settings: "liga";
+  vertical-align: middle;
+  font-display: block;
+}
+</style>

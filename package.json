@@ -1,0 +1,29 @@
+{
+  "name": "@radatek/materialsymbols",
+  "version": "0.2.858",
+  "description": "Material Symbols",
+  "author": "Darius Kisonas",
+  "license": "MIT",
+  "keywords": [
+    "icons",
+    "material-icons",
+    "material-symbols"
+  ],
+  "type": "module",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/radateklt/materialsymbols.git"
+  },
+  "dependencies": {
+    "@pixi/svg2ttf": "^6.1.0",
+    "fontkit": "^2.0.4",
+    "wawoff2": "^2.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0"
+  },
+  "scripts": {
+    "build": "node --eval 'import {clientBuild} from \"./index.js\"; clientBuild(...process.argv.slice(1))'"
+  }
+}
