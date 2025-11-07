@@ -1,6 +1,6 @@
 {
   "name": "@radatek/materialsymbols",
-  "version": "0.2.858",
+  "version": "0.2.888",
   "description": "Material Symbols",
   "author": "Darius Kisonas",
   "license": "MIT",
@@ -21,7 +21,8 @@
     "wawoff2": "^2.0.1"
   },
   "devDependencies": {
-    "@types/node": "^24.3.0"
+    "@types/node": "^24.10.0",
+    "vue": "^3.5.23"
   },
   "scripts": {
     "build": "node --eval 'import {clientBuild} from \"./index.js\"; clientBuild(...process.argv.slice(1))'"
